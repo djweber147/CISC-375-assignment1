@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To Do List</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/todo.css" />
+        <script type="text/javascript" src="js/todo.js"></script>
+	</head>
+	
+	<body>
+		<div id="header">
+            <div id="header-content">
+                <ul id="navlist">
+                    <li class="navlink"><b>Productivity Site</b></li>
+                    <li class="navlink">-</li>
+                    <li class="navlink"><a href="index.html">Home</a></li>
+                    <li class="navlink"><a href="todolist.html">To Do List</a></li>
+                    <li class="navlink"><a href="photos.html">Photo Gallery</a></li>
+                    <li class="navlink"><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+		<div id="mainbody">
+            <p>
+                Here is a very helpful to-do list. Try adding something!
+            </p>
+            <table id="todolist">
+                <tr>
+                    <th class="sorter" onclick="sortComplete()">Complete</th>
+                    <th class="sorter" onclick="sortCategory()">Category</th>
+                    <th class="sorter" onclick="sortDeadline()">Deadline</th>
+                    <th>Description</th>
+					<th class="sorter" onclick="sortAdded()">Added</th>
+                    <th>Remove</th>
+                </tr>
+            </table>
+            <br />
+            <hr />
+            <p>
+                <b>Add Item:</b>
+            </p>
+            <p>
+                Category:
+                <ul id="categories">
+                    <li class="red"><input name="category" type="radio" checked="checked" onClick="categoryValue='Work';categoryColor='red';">Work</input></li>
+                    <li class="blue"><input name="category" type="radio" onClick="categoryValue='School';categoryColor='blue';">School</input></li>
+                    <li class="orange"><input name="category" type="radio" onClick="categoryValue='Social';categoryColor='orange';">Social</input></li>
+                    <li class="gray"><input name="category" type="radio" onClick="categoryValue='Personal';categoryColor='gray';">Personal</input></li>
+                </ul>
+            
+                Add To Do Category:
+                <br />
+                <input type="text" id="newCategory" value="New Category" />
+                <input type="color" id="newColor" />
+                <input type="button" onclick="addColor()" value="Add Item" />
+            </p>
+            <p>Set alarm date and time:
+                <input type="date" id="date" />
+                <input type="time" id="time" />
+            </p>
+            <p>Name of alarm:
+                <input type="text" id="description" value="Description" />
+            </p>
+            <p>
+                <input type="button" onclick="addItem()" value="Add Item" />
+            </p>
+            
+		</div>
+        <script type="text/javascript">initialize();</script>
+	</body>
+
+</html>

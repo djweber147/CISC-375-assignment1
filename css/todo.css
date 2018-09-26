@@ -1,0 +1,36 @@
+
+
+#todolist {
+    width: 100%;
+    border: 1px solid gray;
+    margin-top: 10px;
+	text-align: left;
+}
+
+.sorter {
+	cursor: pointer;
+}
+
+#categories {
+    list-style: none;
+    padding-left: 0px;
+    max-width: 25%;
+    
+}
+
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.gray {
+    background-color: gray;
+}

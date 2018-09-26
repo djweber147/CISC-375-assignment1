@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Photos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/photos.css" />
+        <script type="text/javascript" src="js/lightbox.js"></script>
+	</head>
+	
+    <body>
+        <div class="lightbox" id="lightbox"></div>
+        <div class="lightbox" id="lightboxnext"><img  id="lbphotonext" src="photos/3.jpg" /></div>
+        <div class="lightbox" id="lightboxcurrent"><img  id="lbphoto" src="photos/2.jpg" /></div>
+        <div class="lightbox lbButton" id="left"><img onclick="goLeft()" src="img/left.png" style="width:100%;height:100%" /></div>
+        <div class="lightbox lbButton" id="right"><img onclick="goRight()" src="img/right.png" style="width:100%;height:100%" /></div>
+        <div class="lightbox lbButton" id="hide"><img onclick="hide()" src="img/close-button.png" style="width:100%;height:100%" /></div>
+        <div class="lightbox lbButton" id="play"><img id="playpause" onclick="play()" src="img/play.png" style="width:100%;height:100%" /></div>
+		<div class="lightbox" id="thumbnails">
+			<ul id="ulthumbnail">
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/0.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/1.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/2.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/3.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/4.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/5.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/6.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/7.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/8.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/9.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/10.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/11.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/12.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/13.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/14.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/15.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/16.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/17.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/18.jpg" /></li>
+				<li class="lithumbnail"><img class="imgthumbnail" src="photos/19.jpg" /></li>
+				
+			</ul>
+		</div>
+		<div id="header">
+            <div id="header-content">
+                <ul id="navlist">
+                    <li class="navlink"><b>Productivity Site</b></li>
+                    <li class="navlink">-</li>
+                    <li class="navlink"><a href="index.html">Home</a></li>
+                    <li class="navlink"><a href="todolist.html">To Do List</a></li>
+                    <li class="navlink"><a href="photos.html">Photo Gallery</a></li>
+                    <li class="navlink"><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+		<div id="mainbody">
+            <p>Take a minute to enjoy some free pictures. Click on any picture to view a larger image.</p>
+			<table id="phototable">
+                <tr>
+                    <td class="photodata"><img class="photo" src="photos/0.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/1.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/2.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/3.jpg" /></td>
+                </tr>
+                <tr>
+                    <td class="photodata"><img class="photo" src="photos/4.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/5.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/6.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/7.jpg" /></td>
+                </tr>
+                <tr>
+                    <td class="photodata"><img class="photo" src="photos/8.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/9.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/10.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/11.jpg" /></td>
+                </tr>
+                <tr>
+                    <td class="photodata"><img class="photo" src="photos/12.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/13.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/14.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/15.jpg" /></td>
+                </tr>
+                <tr>
+                    <td class="photodata"><img class="photo" src="photos/16.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/17.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/18.jpg" /></td>
+                    <td class="photodata"><img class="photo" src="photos/19.jpg" /></td>
+                </tr>
+            </table>
+		</div>
+        <script type="text/javascript">initialize();</script>
+	</body>
+
+</html>

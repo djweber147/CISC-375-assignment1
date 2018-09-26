@@ -1,0 +1,140 @@
+#phototable {
+    width: 100%;
+}
+
+.photodata {
+    width: 25%;
+}
+
+.photo {
+    width: 100%;
+}
+
+#lightbox {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+    background-color: #000000e0;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    visibility: hidden;
+}
+
+
+#lightboxcurrent, #lightboxnext {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 4;
+    transform: translate(-50%, -80%);
+    margin: auto;
+    visibility: hidden;
+    width: 50%;
+    height: 50%;
+}
+
+#lightboxnext {
+    opacity: 0;
+    z-index: 3;
+}
+
+#lbphoto, #lbphotonext {
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#thumbnails {
+	position: fixed;
+	background-color: black;
+	transform: translateX(-50%);
+	width: 50%;
+	height: 10%;
+	padding-bottom: 15px;
+	margin:0px auto;
+	bottom: 5%;
+	left: 50%;
+	visibility: hidden;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	z-index: 5;
+}
+
+#ulthumbnail {
+	height: 100%;
+	white-space:nowrap
+}
+
+.lithumbnail {
+	width: 10%;
+	display: inline;
+}
+
+.imgthumbnail {
+	width: 10%;
+	height: auto;
+    transition: width .35s, height .35s;
+}
+
+.imgthumbnail:hover {
+    width: 13%;
+    height: auto;
+}
+
+#hide {
+    position: fixed;
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    padding:1px;
+    right: 5px;
+    top: 5px;
+    z-index: 5;
+    transition: width .35s, height .35s;
+}
+
+#hide:hover {
+    width: 60px;
+    height: 60px;
+}
+
+#right, #left {
+    position: fixed;
+    visibility: hidden;
+    height: 75px;
+    width: 75px;
+    top: 45%;
+    z-index: 5;
+    transition: width .35s, height .35s;
+}
+
+#play {
+    position: fixed;
+    visibility: hidden;
+    height: 75px;
+    width: 75px;
+    margin:0px auto;
+    bottom: 18%;
+    left: 50%;
+    z-index: 6;
+    transform: translateX(-50%);
+    transition: width .35s, height .35s;
+}
+
+#right {
+    right: 10px;
+}
+
+#left {
+    left: 10px;
+}
+
+#left:hover, #right:hover, #play:hover {
+    width: 85px;
+    height: 85px;
+}
+
